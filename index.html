@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,71 +9,73 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
     <title>Frontend Mentor | Results summary component</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app/css/style.css">
 
 </head>
+
 <body>
 
-<div class="container">
-    <main class="results">
-        <section class="results__result-info">
-            <h1 class="results__header">Your Result</h1>
-            <div class="results__score">
-                <span class="results__user-score">76</span>
-                of 100
-            </div>
+    <div class="container">
+        <main class="results">
+            <section class="results__result-info">
+                <h1 class="results__header">Your Result</h1>
+                <div class="results__score">
+                    <span class="results__user-score">76</span>
+                    of 100
+                </div>
 
-            <p class="results__grade">Great</p>
-            <p class="results__comparison">You scored higher than 65% of the people who have taken these tests.</p>
-        </section>
-        <section class="details">
-            <h2 class="details__header">Summary</h2>
+                <p class="results__grade">Great</p>
+                <p class="results__comparison">You scored higher than 65% of the people who have taken these tests.</p>
+            </section>
+            <section class="details">
+                <h2 class="details__header">Summary</h2>
 
-            <div class="trait trait_reaction">
-                <span class="trait__icon">
-                        <img src="assets/images/icon-reaction.svg" alt=""/>
-                </span>
-                <span class="trait__name">Reaction</span>
-                <span class="trait__result">
-                <span class="trait__user-score">80</span> / 100</span>
-            </div>
+                <div class="trait trait_reaction">
+                    <span class="trait__icon">
+                        <img src="app/assets/images/icon-reaction.svg" alt="" />
+                    </span>
+                    <span class="trait__name">Reaction</span>
+                    <span class="trait__result">
+                        <span class="trait__user-score">80</span> / 100</span>
+                </div>
 
-            <div class="trait trait_memory">
-                <span class="trait__icon">
-                        <img src="assets/images/icon-memory.svg" alt=""/>
-                </span>
-                <span class="trait__name">Memory</span>
-                <span class="trait__result">
-                    <span class="trait__user-score">92</span> / 100
-                </span>
-            </div>
+                <div class="trait trait_memory">
+                    <span class="trait__icon">
+                        <img src="app/assets/images/icon-memory.svg" alt="" />
+                    </span>
+                    <span class="trait__name">Memory</span>
+                    <span class="trait__result">
+                        <span class="trait__user-score">92</span> / 100
+                    </span>
+                </div>
 
-            <div class="trait trait_verbal">
-                <span class="trait__icon">
-                        <img src="assets/images/icon-verbal.svg" alt=""/>
-                </span>
-                <span class="trait__name">Verbal</span>
-                <span class="trait__result">
-                    <span class="trait__user-score">61</span> / 100
-                </span>
-            </div>
+                <div class="trait trait_verbal">
+                    <span class="trait__icon">
+                        <img src="app/assets/images/icon-verbal.svg" alt="" />
+                    </span>
+                    <span class="trait__name">Verbal</span>
+                    <span class="trait__result">
+                        <span class="trait__user-score">61</span> / 100
+                    </span>
+                </div>
 
-            <div class="trait trait_visual">
-                <span class="trait__icon">
-                        <img src="assets/images/icon-visual.svg" alt="eye"/>
-                </span>
-                <span class="trait__name">Visual</span>
-                <span class="trait__result">
-                    <span class="trait__user-score">72</span> / 100
-                </span>
-            </div>
+                <div class="trait trait_visual">
+                    <span class="trait__icon">
+                        <img src="app/assets/images/icon-visual.svg" alt="eye" />
+                    </span>
+                    <span class="trait__name">Visual</span>
+                    <span class="trait__result">
+                        <span class="trait__user-score">72</span> / 100
+                    </span>
+                </div>
 
-            <!-- TODO Добавить svg стрелку того же цвета с помощью ::before
+                <!-- TODO Добавить svg стрелку того же цвета с помощью ::before
              ( content: url() )-->
-            <a class="details__button" href="#">Continue</a>
-        </section>
-    </main>
-</div>
+                <a class="details__button" href="#">Continue</a>
+            </section>
+        </main>
+    </div>
 
 </body>
+
 </html>
