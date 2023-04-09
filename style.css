@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --vert_padding: 3.2rem;
+}
+@media (max-width: 376px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 376px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    max-width: 1440px;
+  }
+}
+
+.results {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.8rem;
+}
+@media (min-width: 376px) {
+  .results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 752px;
+    border-radius: 2.8rem;
+    box-shadow: 1rem 1rem 3rem hsla(252, 100%, 67%, 0.15);
+  }
+}
+.results__result-info {
+  border-radius: 0 0 2.8rem 2.8rem;
+  padding: var(--vert_padding) 5.6rem;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 376px) {
+  .results__result-info {
+    border-radius: 2.8rem;
+  }
+}
+.results__comparison {
+  text-align: center;
+}
+.results__header, .results__comparison {
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 2.8rem;
+}
+.results__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsla(241, 100%, 89%, 0.6);
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 70%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  margin-bottom: 2.8rem;
+}
+.results__user-score {
+  font-size: 6.4rem;
+  font-weight: 800;
+  color: white;
+}
+.results__grade {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: var(--vert_padding) 4rem;
+  gap: 2rem;
+}
+.details__header {
+  color: hsl(224, 30%, 27%);
+}
+.details__button {
+  display: block;
+  padding-block: 1.6rem;
+  border-radius: 4rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+}
+
+.trait {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background-color: rgba(143, 119, 119, 0.66);
+}
+.trait.trait_reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.trait.trait_memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.trait.trait_verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.trait.trait_visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.trait__icon {
+  display: flex;
+  align-items: center;
+}
+.trait img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.trait__name {
+  font-weight: 600;
+  padding-left: 1rem;
+}
+.trait__result {
+  justify-self: end;
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+.trait__user-score {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+
+/*# sourceMappingURL=style.css.map */
